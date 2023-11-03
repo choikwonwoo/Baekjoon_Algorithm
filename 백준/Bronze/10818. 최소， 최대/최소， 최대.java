@@ -11,10 +11,9 @@ public class Main{
         int max = first;
         while (st.hasMoreTokens()){
             int num = Integer.parseInt(st.nextToken());
-            if(num >= max){
+            if(num > max){
                 max = num;
-            }
-            if (num <= min){
+            }else if (num < min){
                 min = num;
             }
         }
